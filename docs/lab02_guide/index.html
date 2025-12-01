@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>KKU Campus Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <canvas id="logoCanvas" width="320" height="80" aria-label="KKU Guide Logo"></canvas>
+      <div class="header-text">
+        <h1>KKU Campus Guide</h1>
+        <!-- แก้รหัสนักศึกษา + ชื่อให้เป็นของตัวเอง -->
+        <p class="student-info">
+          รหัสนักศึกษา: xxxxxxxxx-x<br>
+          ชื่อ-สกุล: ธิติวุฒิ ศรีอมรรัตน์
+        </p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#places">สถานที่แนะนำ</a>
+      <a href="#form">แนะนำสถานที่ใหม่</a>
+      <a href="#about">เกี่ยวกับเว็บไซต์</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- สถานที่แนะนำ -->
+    <section id="places">
+      <h2>สถานที่แนะนำในมหาวิทยาลัยขอนแก่น</h2>
+
+      <!-- Place 1 -->
+      <article class="place">
+        <h3>1. สำนักหอสมุด มหาวิทยาลัยขอนแก่น</h3>
+        <div class="place-meta">
+          <span class="tag">อ่านหนังสือ</span>
+          <span class="tag">ทำงานกลุ่ม</span>
+        </div>
+        <div class="place-gallery">
+          <img src="images/library-1.jpg" alt="ด้านหน้าสำนักหอสมุด มหาวิทยาลัยขอนแก่น">
+          <img src="images/library-2.jpg" alt="บรรยากาศภายในสำนักหอสมุด มหาวิทยาลัยขอนแก่น">
+        </div>
+        <p>
+          ศูนย์กลางการเรียนรู้ที่รวบรวมหนังสือ วิทยานิพนธ์ วารสาร และฐานข้อมูลออนไลน์
+          รองรับนิสิตนักศึกษาทุกคณะ มีทั้งโซนอ่านเงียบและโซนอ่านแบบทำงานกลุ่ม
+          พร้อมปลั๊กไฟและอินเทอร์เน็ตความเร็วสูง
+        </p>
+      </article>
+
+      <!-- Place 2 -->
+      <article class="place">
+        <h3>2. ศูนย์อาหารคอมเพล็กซ์ (Complex)</h3>
+        <div class="place-meta">
+          <span class="tag">อาหาร</span>
+          <span class="tag">นั่งชิล</span>
+        </div>
+        <div class="place-gallery">
+          <img src="images/complex-1.jpg" alt="บรรยากาศภายในศูนย์อาหารคอมเพล็กซ์ มข.">
+          <img src="images/complex-2.jpg" alt="โซนร้านอาหารภายในคอมเพล็กซ์ มข.">
+        </div>
+        <p>
+          แหล่งรวมอาหารยอดฮิตของนักศึกษา มีทั้งอาหารตามสั่ง ก๋วยเตี๋ยว เครื่องดื่ม และของหวาน
+          ราคานักศึกษา เดินทางสะดวก อยู่ใกล้หลายคณะ เหมาะทั้งสำหรับกินข้าวและนัดเพื่อนคุยงาน
+        </p>
+      </article>
+
+      <!-- Place 3 -->
+      <article class="place">
+        <h3>3. บึงสีฐาน</h3>
+        <div class="place-meta">
+          <span class="tag">พักผ่อน</span>
+          <span class="tag">ออกกำลังกาย</span>
+        </div>
+        <div class="place-gallery">
+          <img src="images/bueng-1.jpg" alt="บึงสีฐานช่วงพระอาทิตย์ตกดิน">
+          <img src="images/bueng-2.jpg" alt="ลู่วิ่งรอบบึงสีฐาน">
+        </div>
+        <p>
+          จุดพักผ่อนยอดนิยม บรรยากาศริมบึง เหมาะสำหรับเดินเล่น วิ่งออกกำลังกาย หรือถ่ายรูป
+          ตอนเย็นจะสวยเป็นพิเศษเพราะเห็นพระอาทิตย์ตกดิน
+        </p>
+      </article>
+
+      <!-- Place 4 -->
+      <article class="place">
+        <h3>4. ประตูศรีฐาน</h3>
+        <div class="place-meta">
+          <span class="tag">แลนด์มาร์ก</span>
+          <span class="tag">ถ่ายรูป</span>
+        </div>
+        <div class="place-gallery">
+          <img src="images/gate-1.jpg" alt="ประตูศรีฐานมหาวิทยาลัยขอนแก่น">
+          <img src="images/gate-2.jpg" alt="มุมถ่ายรูปยอดนิยมบริเวณประตูศรีฐาน">
+        </div>
+        <p>
+          แลนด์มาร์กสำคัญของมหาวิทยาลัยขอนแก่น เป็นอีกหนึ่งจุดที่นิสิตนิยมมาถ่ายรูป
+          โดยเฉพาะช่วงรับน้องและรับปริญญา
+        </p>
+      </article>
+    </section>
+
+    <!-- ฟอร์มแนะนำสถานที่ -->
+    <section id="form">
+      <h2>แบบฟอร์มแนะนำสถานที่ใน มข.</h2>
+      <p class="form-description">
+        หากคุณมีสถานที่ที่อยากแนะนำให้เพื่อน ๆ รู้จัก สามารถกรอกแบบฟอร์มด้านล่างนี้ได้
+        ข้อมูลจะถูกส่งไปยังผู้ดูแลเว็บไซต์ผ่านบริการ Web3Forms
+      </p>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="suggest-form">
+        <!-- แก้ access_key ให้เป็นของตัวเองจาก web3forms -->
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+
+        <label>
+          ชื่อสถานที่
+          <input type="text" name="place_name" placeholder="เช่น ลานอเนกประสงค์หน้าโรงอาหารคอมเพล็กซ์" required>
+        </label>
+
+        <label>
+          รายละเอียดสถานที่
+          <textarea name="details" rows="4" placeholder="อธิบายบรรยากาศ การเดินทาง หรือสิ่งที่น่าสนใจ" required></textarea>
+        </label>
+
+        <label>
+          ลิงก์รูปภาพ (URL)
+          <input type="url" name="image_url" placeholder="https://example.com/my-photo.jpg" required>
+        </label>
+
+        <label>
+          อีเมลติดต่อกลับ (ถ้ามี)
+          <input type="email" name="email" placeholder="your@email.com">
+        </label>
+
+        <button type="submit">ส่งคำแนะนำสถานที่</button>
+      </form>
+    </section>
+
+    <!-- เกี่ยวกับเว็บ -->
+    <section id="about">
+      <h2>เกี่ยวกับ KKU Campus Guide</h2>
+      <p>
+        เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา Web Technology
+        มีวัตถุประสงค์เพื่อแนะนำสถานที่ต่าง ๆ ภายในมหาวิทยาลัยขอนแก่น
+        พร้อมทั้งฝึกการใช้ HTML5, CSS3, Responsive Web Design และการเชื่อมต่อกับบริการภายนอกผ่านฟอร์มออนไลน์
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>KKU Campus Guide &copy; 2025 • สร้างเพื่อการเรียนการสอนเท่านั้น</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
