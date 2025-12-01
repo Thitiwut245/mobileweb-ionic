@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU Campus Guide - แนะนำสถานที่มหาวิทยาลัยขอนแก่น</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .student-info {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: inline-block;
+            max-width: 400px;
+        }
+
+        .student-info p {
+            margin: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        article {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .images-wrapper {
+            display: flex;
+            gap: 10px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            flex-wrap: wrap;
+        }
+
+        .images-wrapper img {
+            width: calc(50% - 5px);
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .images-wrapper img:nth-child(n+3) {
+            width: calc(50% - 5px);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .location-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .images-wrapper img {
+                width: 100%;
+                height: 150px;
+                margin-bottom: 10px;
+            }
+
+            .images-wrapper img:nth-child(n+3) {
+                width: 100%;
+            }
+
+            .student-info {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 0 10px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎓 KKU Campus Guide</h1>
+        <p>แนะนำสถานที่สำคัญมหาวิทยาลัยขอนแก่น</p>
+        <div class="student-info">
+            <p><strong>รหัสประจำตัวนักศึกษา:</strong> 123456789</p>
+            <p><strong>ชื่อ-สกุล:</strong> สมชาย จันทร์ศรี</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="location-container">
+            <!-- Location 1 -->
+            <article>
+                <div class="images-wrapper">
+                    <img src="https://via.placeholder.com/400x200?text=KKU+Pavilion+1" alt="KKU Pavilion ภาพที่ 1">
+                    <img src="https://via.placeholder.com/400x200?text=KKU+Pavilion+2" alt="KKU Pavilion ภาพที่ 2">
+                </div>
+                <div class="content">
+                    <h2>🏛️ KKU Pavilion</h2>
+                    <span class="location-tag">ศูนย์กลางวิทยาเขต</span>
+                    <p>เป็นศูนย์รวมของมหาวิทยาลัยขอนแก่น ตั้งอยู่ในบริเวณวิทยาเขตแนวราบ เป็นสถานที่ที่มีความสำคัญสูง โดยมีห้องประชุม ห้องปฏิบัติการ และสิ่งอำนวยความสะดวกต่างๆ สำหรับนักศึกษาและบุคลากรของมหาวิทยาลัย</p>
+                </div>
+            </article>
+
+            <!-- Location 2 -->
+            <article>
+                <div class="images-wrapper">
+                    <img src="https://via.placeholder.com/400x200?text=Library+1" alt="ห้องสมุด ภาพที่ 1">
+                    <img src="https://via.placeholder.com/400x200?text=Library+2" alt="ห้องสมุด ภาพที่ 2">
+                </div>
+                <div class="content">
+                    <h2>📚 ห้องสมุดมหาวิทยาลัย</h2>
+                    <span class="location-tag">แหล่งเรียนรู้</span>
+                    <p>เป็นแหล่งรวมหนังสือ วารสาร และสื่อการเรียนรู้ที่อุดมสมบูรณ์ นักศึกษาสามารถศึกษาและค้นคว้าข้อมูลสำหรับการเรียนและวิจัย มีห้องอ่านที่เงียบสงบและห้องศึกษากลุ่ม</p>
+                </div>
+            </article>
+
+            <!-- Location 3 -->
+            <article>
+                <div class="images-wrapper">
+                    <img src="https://via.placeholder.com/400x200?text=Stadium+1" alt="สนามกีฬา ภาพที่ 1">
+                    <img src="https://via.placeholder.com/400x200?text=Stadium+2" alt="สนามกีฬา ภาพที่ 2">
+                </div>
+                <div class="content">
+                    <h2>⚽ สนามกีฬามหาวิทยาลัย</h2>
+                    <span class="location-tag">สิ่งอำนวยความสะดวก</span>
+                    <p>เป็นศูนย์กีฬาสมบูรณ์ที่มีสนามฟุตบอล สนามเทนนิส และอื่นๆ เพื่อให้นักศึกษาได้ออกกำลังกายและรักษาสุขภาพ มีการจัดการแข่งขันกีฬาระดับมหาวิทยาลัยและจังหวัรตลอดปี</p>
+                </div>
+            </article>
+
+            <!-- Location 4 -->
+            <article>
+                <div class="images-wrapper">
+                    <img src="https://via.placeholder.com/400x200?text=Cafeteria+1" alt="ร้านอาหาร ภาพที่ 1">
+                    <img src="https://via.placeholder.com/400x200?text=Cafeteria+2" alt="ร้านอาหาร ภาพที่ 2">
+                </div>
+                <div class="content">
+                    <h2>🍽️ ศูนย์อาหารและเครื่องดื่ม</h2>
+                    <span class="location-tag">สังคม</span>
+                    <p>มีร้านอาหารและเครื่องดื่มหลากหลาย ตั้งแต่อาหารไทยถึงอาหารนานาชาติ ราคาเหมาะสมและสะดวก นักศึกษาสามารถมาพักผ่อนและสังสรรค์กับเพื่อนๆ ได้ตลอดเวลาราชการ</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KKU Campus Guide - มหาวิทยาลัยขอนแก่น</p>
+    </footer>
+</body>
+</html>
