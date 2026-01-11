@@ -195,6 +195,9 @@ importers:
 
   apps/lab04-photo-vue:
     dependencies:
+      '@capacitor/android':
+        specifier: 8.0.0
+        version: 8.0.0(@capacitor/core@8.0.0)
       '@capacitor/app':
         specifier: 8.0.0
         version: 8.0.0(@capacitor/core@8.0.0)
@@ -792,6 +795,11 @@ packages:
   '@babel/types@7.28.5':
     resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
     engines: {node: '>=6.9.0'}
+
+  '@capacitor/android@8.0.0':
+    resolution: {integrity: sha512-FrBSvVAC5JuLaYHNyDnwQny0/SYnP+xDQbc/KA4wInmRkMXLDv22fkx9aBJIDrxjuUVd+jsRih4SAt8FgMEzCw==}
+    peerDependencies:
+      '@capacitor/core': ^8.0.0
 
   '@capacitor/app@7.1.0':
     resolution: {integrity: sha512-W7m09IWrUjZbo7AKeq+rc/KyucxrJekTBg0l4QCm/yDtCejE3hebxp/W2esU26KKCzMc7H3ClkUw32E9lZkwRA==}
@@ -4805,6 +4813,10 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
+
+  '@capacitor/android@8.0.0(@capacitor/core@8.0.0)':
+    dependencies:
+      '@capacitor/core': 8.0.0
 
   '@capacitor/app@7.1.0(@capacitor/core@7.4.4)':
     dependencies:
